@@ -38,3 +38,7 @@ the resulting obects can be visualized
 ```
 vol.plot(volume=True)
 ```
+
+## Contact
+
+For questions and licensing options, contact alex@horizonelectro.com
