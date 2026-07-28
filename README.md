@@ -20,9 +20,10 @@ equation:
 
 $$\hat{\mathbf n}\times\mathbf E^i(\mathbf r) = \hat{\mathbf n}\times\Big[j\omega\mathbf A(\mathbf r) + \nabla\Phi(\mathbf r)\Big], \qquad \mathbf r \in S$$
 
-with the vector and scalar potentials
+with the vector potential
 
 $$\mathbf A(\mathbf r) = \mu \int_S \mathbf J(\mathbf r')\, G(\mathbf r, \mathbf r')\, dS'$$
+and scalar potential
 
 $$\Phi(\mathbf r) = \frac{j}{\omega\varepsilon} \int_S \big[\nabla_s'\cdot \mathbf J(\mathbf r')\big]\, G(\mathbf r, \mathbf r')\, dS'$$
 
