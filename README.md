@@ -9,7 +9,7 @@ Feb 2026
 
 `scratch` solves the electric field integral equation (EFIE) for scattering from arbitrary
 perfectly-electric-conducting (PEC) surfaces, by the method of moments (MoM) with
-Rao–Wilton–Glisson (RWG) basis functions [1], GPU-accelerated with `cupy`.
+Rao–Wilton–Glisson (RWG) basis functions [1].
 
 ## The physical problem
 
@@ -103,14 +103,6 @@ mixed-potential form, now evaluated off the boundary (so no tangential projectio
 $$
 \mathbf E(\mathbf r) = -j\omega\mathbf A(\mathbf r) - \nabla\Phi(\mathbf r).
 $$
-
-## Implementation
-
-`scratch/efie_mom.py` implements this end to end: `solve()` builds the RWG basis, assembles
-$\mathsf Z$/$\mathbf V$, and returns the triangulated surface with the solved current attached;
-`radiate()` evaluates the resulting field at any probe geometry. `scratch/sources.py` and
-`scratch/surfaces.py` provide convenience constructors for Gaussian-beam excitations and quadratic
-(e.g. parabolic mirror) PEC optics as `pyvista` datasets.
 
 ## References
 
