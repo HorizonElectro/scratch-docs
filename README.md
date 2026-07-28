@@ -40,7 +40,11 @@ using the Rao–Wilton–Glisson basis function of edge $n$ [1]. Each interior e
 triangles $T_n^+, T_n^-$ with respective free (non-shared) vertices $\mathbf r_n^+, \mathbf r_n^-$
 and areas $A_n^+, A_n^-$; with $l_n$ the shared edge length,
 
-$$\mathbf f_n(\mathbf r) = \begin{cases} \dfrac{l_n}{2A_n^+}\big(\mathbf r - \mathbf r_n^+\big), & \mathbf r \in T_n^+ \\[8pt] \dfrac{l_n}{2A_n^-}\big(\mathbf r_n^- - \mathbf r\big), & \mathbf r \in T_n^- \\[6pt] 0, & \text{otherwise}, \end{cases} \qquad \nabla_s\cdot \mathbf f_n(\mathbf r) = \begin{cases} \dfrac{l_n}{A_n^+}, & \mathbf r \in T_n^+ \\[6pt] -\dfrac{l_n}{A_n^-}, & \mathbf r \in T_n^-. \end{cases}$$
+$$\mathbf f_n(\mathbf r) = \begin{cases} \dfrac{l_n}{2A_n^+}\big(\mathbf r - \mathbf r_n^+\big), & \mathbf r \in T_n^+ \\[8pt] \dfrac{l_n}{2A_n^-}\big(\mathbf r_n^- - \mathbf r\big), & \mathbf r \in T_n^- \\[6pt] 0, & \text{otherwise}, \end{cases} $$
+
+the divergence is given by,
+
+$$\nabla_s\cdot \mathbf f_n(\mathbf r) = \begin{cases} \dfrac{l_n}{A_n^+}, & \mathbf r \in T_n^+ \\[6pt] -\dfrac{l_n}{A_n^-}, & \mathbf r \in T_n^-. \end{cases}$$
 
 $\mathbf f_n$ is continuous across the shared edge, divergence-free everywhere else, and represents
 a current of uniform total flow $l_n$ across that edge — the RWG basis exists precisely so surface
