@@ -5,6 +5,8 @@ Alex Laut
 Feb 2026
 ```
 
+![](./figs/iso.png)
+
 ## Introduction
 
 `scratch` solves the electric field integral equation (EFIE) for scattering from arbitrary
