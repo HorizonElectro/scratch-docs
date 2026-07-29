@@ -1,5 +1,9 @@
 # Introduction
 
+```
+Surface Current Radiation Analysis Toolkit; Computational Helmholtz
+```
+
 ![](./assets/iso.PNG)
 
 `scratch` solves the electric field integral equation (EFIE) for scattering from arbitrary
