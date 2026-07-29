@@ -1,6 +1,6 @@
 # Introduction
 
-![](./figs/iso.png)
+![](figs/iso.png)
 
 `scratch` solves the electric field integral equation (EFIE) for scattering from arbitrary
 perfectly-electric-conducting (PEC) surfaces, by the method of moments (MoM) with
