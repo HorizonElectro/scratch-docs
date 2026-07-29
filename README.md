@@ -25,6 +25,7 @@ $$\hat{\mathbf n}\times\mathbf E^i(\mathbf r) = \hat{\mathbf n}\times\Big[j\omeg
 with the vector potential
 
 $$\mathbf A(\mathbf r) = \mu \int_S \mathbf J(\mathbf r')\, G(\mathbf r, \mathbf r')\, dS'$$
+
 and scalar potential
 
 $$\Phi(\mathbf r) = \frac{j}{\omega\varepsilon} \int_S \big[\nabla_s'\cdot \mathbf J(\mathbf r')\big]\, G(\mathbf r, \mathbf r')\, dS'$$
