@@ -1,19 +1,12 @@
-# scratch
-
-```
-Alex Laut
-Feb 2026
-```
+# Introduction
 
 ![](./figs/iso.png)
-
-## Introduction
 
 `scratch` solves the electric field integral equation (EFIE) for scattering from arbitrary
 perfectly-electric-conducting (PEC) surfaces, by the method of moments (MoM) with
 Rao–Wilton–Glisson (RWG) basis functions [1].
 
-## The physical problem
+# The physical problem
 
 An incident field $\mathbf{E}^i$ illuminates a PEC surface $S$. The boundary condition — the
 tangential electric field vanishes on a perfect conductor — relates the (unknown) induced surface
@@ -34,7 +27,7 @@ $$\Phi(\mathbf r) = \frac{j}{\omega\varepsilon} \int_S \big[\nabla_s'\cdot \math
 
 $$G(\mathbf r, \mathbf r') = \frac{e^{-jk|\mathbf r - \mathbf r'|}}{4\pi|\mathbf r - \mathbf r'|}, \qquad k = \frac{2\pi}{\lambda} = \frac{\omega}{c}.$$
 
-## Discretization: RWG basis functions
+# Discretization: RWG basis functions
 
 $S$ is triangulated, and the current is expanded over the mesh's interior edges,
 
@@ -55,7 +48,7 @@ a current of uniform total flow $l_n$ across that edge — the RWG basis exists 
 current can be expanded edge-by-edge without introducing spurious line charges at triangle
 boundaries.
 
-## The linear system
+# The linear system
 
 Testing the EFIE with the same basis, $\langle \mathbf f_m, \cdot\rangle$ (evaluated here at each
 testing function's own $T_m^+/T_m^-$ centroids $\mathbf r_{c,m}^{\pm}$), turns the integral equation
@@ -73,7 +66,7 @@ $\boldsymbol\rho_{c,m}^- = \mathbf r_m^- - \mathbf r_{c,m}^-$ are each testing t
 centroid-to-free-vertex vectors [1, eq. 17–20]. $N$ (the number of interior mesh edges) unknown
 current coefficients $I_n$ are solved for via GMRES.
 
-## Radiated field reconstruction
+# Radiated field reconstruction
 
 Given the solved $I_n$ (and hence $\mathbf J$ and, via continuity, $\sigma$), the scattered field at
 any point in free space — on the mesh itself or at a remote probe — follows from the same
@@ -81,7 +74,7 @@ mixed-potential form, now evaluated off the boundary (so no tangential projectio
 
 $$\mathbf E(\mathbf r) = -j\omega\mathbf A(\mathbf r) - \nabla\Phi(\mathbf r).$$
 
-## References
+# References
 
 1. S. M. Rao, D. R. Wilton, and A. W. Glisson, "Electromagnetic scattering by surfaces of arbitrary
    shape," *IEEE Transactions on Antennas and Propagation*, vol. AP-30, no. 3, pp. 409–418, May 1982.
